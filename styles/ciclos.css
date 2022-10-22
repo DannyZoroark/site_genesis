@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.card-cabeca{
+	background-image: linear-gradient(to right, #FFFA69, #9E768F, #331832);
+	background-size: 200%;
+	background-position: center;
+	animation-name: fundoTrocaCor;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes fundoTrocaCor {
+	20%{
+		background-position: right;
+	}
+	60%{
+		background-position: left;
+	}
+}
+
+.lista{
+	margin-left: 20px;
+	margin-top: 0;
+	font-size: 1.1rem;
+	text-align: justify;
+}
+
+.card-ciclo{
+	outline: 2px solid black;
+	margin: 10px;
+}

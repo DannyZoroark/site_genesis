@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.card-transporte{
+	background-color: #2E382E !important;
+	color: white;
+	margin: 8px;
+}
+
+.card-transporte:nth-child(odd){
+	background-color: #331832 !important;
+}
+
+.card-title{
+	color: #FFFA69 !important;
+}
+
+.separa-roxo{
+	background-color: #648381 !important;
+	height: 2px;
+}

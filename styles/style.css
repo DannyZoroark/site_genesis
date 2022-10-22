@@ -1,0 +1,262 @@
+/*
+	Cores: 
+	#331832 = Dark Purple
+	#9E768F = Mountbatten Pink
+	#FFFA69 = Icterine
+	#2E382E = Pine Tree
+	#648381 = Steel Teal
+*/
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+/* Config Variavel */
+:root{
+	--cor1: #331832;
+	--cor2: #9E768F;
+	--cor3: #FFFA69;
+	--cor4: #2E382E;
+	--cor5: #648381;
+
+}
+/* Config Variavel */
+
+/* Scroll */
+
+body::-webkit-scrollbar {
+  width: 12px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--cor4);        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--cor5);    
+  border-radius: 20px;       
+  border: 1px solid var(--cor1);  
+}
+
+/* Scroll */
+
+/* Cabeçalho */
+.cabecalho{
+	background-color: var(--cor3);
+}
+
+.logo{
+	transition: 0.2s ease-in-out;
+}
+
+.logo:hover{
+	opacity: 75%;
+}
+
+/* Botão de trocar tema ainda n sei se será inserido  
+
+.tema-button{
+	outline: none;
+	border: none;
+	padding: 8px;
+	border-radius: 10px;
+}
+
+
+
+@media screen and (min-width: 768px){
+	.tema-button{
+		position: absolute;
+		right: 20px;
+	}
+}
+
+*/
+
+.drop-cont{
+	background-color: var(--cor2) !important;
+}
+
+.drop-cont a{
+	color: white;
+}
+
+.nav-item{
+	margin: 6px;
+	transition: 0.2s !important;
+	border-radius: 15px;
+	padding: 2px;
+}
+
+.nav-item:hover{
+	background-color: var(--cor1);
+	border-radius: 15px;
+}
+
+.nav-item:hover > a{
+	color: var(--cor3) !important;
+}
+
+@media screen and (max-width: 968px){
+	nav{
+		text-align: center;	
+	}
+
+	.drop-item{
+		text-align: center !important;
+	}
+}
+
+/* Cabeçalho */
+
+/* Card Frase */
+.cont-frase{
+	background-color: var(--cor1) !important;
+	border: none;
+	outline: none;
+}
+
+.card-body > blockquote{
+	color: white;
+	font-family: cursive;
+	text-shadow: 2px 3px 6px var(--cor1);
+	text-align: right;
+}
+
+.card-body > blockquote > p{
+		font-family: 'Kavivanar', cursive;
+		letter-spacing: 5%;
+		font-size: 20px;
+}
+/* Card Frase */
+
+/* Corpo */
+
+body{
+	background-color: var(--cor2) !important;
+}
+
+.fundo-fixo_infantil{
+	width: 100%;
+	height: 400px;
+	background-image: url("../assets/imgs/child.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.fundo-fixo_fundamental{
+	width: 100%;
+	height: 400px;
+	background-image: url("../assets/imgs/alunos.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top center;
+}
+
+.fundo-fixo_fundamental2{
+	width: 100%;
+	height: 400px;
+	background-image: url("../assets/imgs/jovens.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top center;
+}
+
+.fase{
+	background-color: var(--cor3) !important;
+}
+
+/* Corpo */
+
+/* Rodapé */
+footer{
+	background-color: var(--cor4);
+	display: flex !important;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	color: white;
+}
+
+.area-logo__footer{
+	padding: 20px;
+	width: 300px;
+	height: 200px;
+	background-color: var(--cor3);
+	box-shadow: 2px 2px 3px var(--cor2);
+	border-bottom-right-radius: 40px;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+
+.rodape__area{
+	max-width: 90%;
+	margin: 20px;
+	text-align: center;
+	padding-left: 10px;
+	border-left: 1px solid white;
+}
+
+/* Rodapé */
+
+/* Outros Componentes */
+.linha_separa{
+	background-color: var(--cor3);
+	width: 10%;
+	height: 2px;
+	animation-name: linha;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes linha{
+	20%{
+		width: 100%;
+	}
+	80%{
+		width: 80%;
+	}
+}
+
+.botao{
+	background-color: var(--cor3) !important;
+	border: 2px solid var(--cor1) !important;
+	color: var(--cor4);
+}
+
+.botao:hover{
+	background-color: var(--cor1) !important;
+	border: 2px solid var(--cor3) !important;
+	color: var(--cor3);
+}
+/* Outros Componentes */
+
+/* Atividade Extras */
+
+.card-atividade{
+	outline: 2px solid black;
+	margin: 8px;
+	background-color: var(--cor1) !important;
+	border-radius: 20px;
+		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.250);
+} 
+
+.title-ati{
+	color: var(--cor3);
+}
+
+.grupo-atividades{
+	padding: 25px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}

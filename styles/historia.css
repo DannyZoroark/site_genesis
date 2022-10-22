@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.foto-historia{
+	background-image: url("../assets/imgs/story.jpg");
+	background-size: cover;
+	background-position: left center;
+	background-attachment: fixed;
+	height: 400px;
+}
+
+.titulo{
+	font-size: 2rem;
+	text-align: center;
+}
+
+.paragrafo{
+	font-size: 1.1rem;
+	text-align: justify;
+}
